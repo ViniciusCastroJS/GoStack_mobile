@@ -30,7 +30,7 @@ export default function App() {
 
     const {likes} = repositories[findindex]; 
 
-    repositories[findindex].likes = likes + 1;
+    SetRepositories(...repositories, repositories[findindex].likes = likes + 1)
   }
 
   return (
